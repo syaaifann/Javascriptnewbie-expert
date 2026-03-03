@@ -334,3 +334,204 @@ Tanpa operator, variabelmu cuma jadi pajangan. Operatorlah yang membuat aplikasi
 
 ---
 
+Siap, kencangkan sabuk pengaman! Kita masuk ke **Part 4: String Manipulation**.
+
+Kalau di Part 3 kita fokus ke "Mesin Hitung" (Angka), sekarang kita fokus ke **"Mesin Cetak"** (Teks). Kita akan belajar cara merangkai kata agar tidak kaku dan terlihat profesional.
+
+---
+
+# ✍️ Part 4: String Manipulation (Mesin Cetak Teks)
+
+### 🧩 Analogi: "Mesin Cetak Undangan"
+
+Bayangkan kamu punya tumpukan kartu undangan kosong. Kamu ingin mengisi nama tamu, jam, dan lokasi secara otomatis.
+
+* **Cara Lama (Concatenation)**: Ibarat kamu memotong-motong kertas kecil berisi nama, lalu kamu **lem** satu-satu ke kartu undangan pakai simbol `+`. Ribet, berantakan, dan kalau kurang spasi, tulisannya jadi dempet.
+* **Cara Modern (Template Literals)**: Ibarat kamu punya **mesin cetak digital**. Kamu cukup bikin desain utuh, lalu kasih tanda khusus `${ }` sebagai tempat kosong yang akan diisi otomatis oleh komputer. Hasilnya rapi, bersih, dan cepat.
+
+---
+
+### 📚 Teori: Menggabungkan Teks (Lama vs Baru)
+
+#### 1. Cara Lama: Concatenation (`+`)
+
+Menggunakan tanda tambah untuk menyambung teks dan variabel.
+
+> **Kekurangan:** Gampang lupa kasih spasi dan pusing kalau kutipannya banyak.
+
+#### 2. Cara Modern: Template Literals (Backticks)
+
+Menggunakan simbol **backtick** (tombol di bawah Esc: ```) dan tanda `${variable}` untuk memasukkan data.
+
+> **Kelebihan:** Jauh lebih mudah dibaca dan bisa menulis teks lebih dari satu baris tanpa error.
+
+---
+
+### 🛠️ Praktek: Membuat Pesan Konfirmasi Dompet Digital
+
+Buka `script.js` kamu. Kita lanjutkan simulasi **Project Fase 1**.
+
+```javascript
+// 1. Data yang kita punya
+const namaUser = "Budi";
+let item = "Kopi Susu";
+let harga = 25000;
+
+// 2. Cara Lama (Ribet)
+let pesanLama = "Halo " + namaUser + ", kamu baru saja membeli " + item + " seharga " + harga + ".";
+console.log("Cara Lama:", pesanLama);
+
+// 3. Cara Modern (Template Literals - REKOMENDASI)
+// Perhatikan: Pakai tanda backtick (`), bukan kutip biasa
+let pesanBaru = `Halo ${namaUser}, 
+kamu baru saja membeli ${item} 
+dengan harga Rp${harga}.`;
+
+console.log("Cara Modern:\n" + pesanBaru);
+
+```
+
+---
+
+### 🔍 Kenapa Ini Penting?
+
+Dalam dunia kerja nyata, kamu akan sering mengirim pesan otomatis ke user (seperti struk belanja atau notifikasi WA). Kalau pakai cara lama, kodemu bakal penuh dengan tanda `+` dan kutipan yang bikin sakit mata. **Template Literals** bikin kodemu terlihat seperti kalimat manusia biasa.
+
+---
+
+### 💡 Tantangan Part 4 (Creative Challenge)
+
+1. Buat variabel `const` untuk `kotaAsal` dan `makananFavorit`.
+2. Buat variabel `let` untuk `umur`.
+3. Gunakan **Template Literals** (backticks) untuk mencetak kalimat: *"Saya berasal dari [kotaAsal], umur saya [umur] tahun, dan saya sangat suka makan [makananFavorit]."*
+4. Coba tambahkan baris baru di dalam backtick tersebut agar teksnya tidak memanjang ke samping di console.
+
+**Sudah merasa seperti penulis profesional? Kalau cara merangkai kata sudah mantap, kita lanjut ke Part 5: Logika Dasar (Cara membuat komputer "membandingkan" sesuatu)!** ⚡
+
+---
+
+Ini adalah **Part 5**, bagian terakhir dari **Phase 1 (The Fundamentals)**. Di sini kita akan belajar cara membuat komputer menjadi "pintar" dengan membandingkan dua hal.
+
+Setelah ini, kita akan langsung mengerjakan **Project Gabungan Fase 1**!
+
+---
+
+# ⚖️ Part 5: Logika Dasar (Si Penjaga Gerbang)
+
+### 🧩 Analogi: "Petugas Keamanan (Bouncer)"
+
+Bayangkan kamu sedang berdiri di depan pintu masuk sebuah klub atau wahana bermain.
+
+* **Tipe Data Boolean** adalah jawaban si petugas: Hanya ada **"Boleh Masuk" (`true`)** atau **"Dilarang Masuk" (`false`)**.
+* **Operator Perbandingan** adalah **alat ukur** si petugas. Dia akan mengecek: "Apakah tinggi badan kamu lebih dari 150cm?", "Apakah umur kamu pas 18 tahun?", atau "Apakah kamu membawa tiket?".
+
+---
+
+### 📚 Teori: Alat Ukur Perbandingan
+
+Berikut adalah daftar "alat ukur" yang akan menghasilkan nilai `true` atau `false`:
+
+| Simbol | Arti | Contoh |
+| --- | --- | --- |
+| `==` | Sama dengan (Cek nilainya saja) | `5 == "5"` (Hasil: `true`) |
+| `===` | **Sangat Sama** (Cek nilai & Tipe data) | `5 === "5"` (Hasil: **`false`**) |
+| `!=` | Tidak sama dengan | $10 != 5$ (Hasil: `true`) |
+| `>` | Lebih besar dari | $10 > 5$ (Hasil: `true`) |
+| `<` | Lebih kecil dari | $3 < 2$ (Hasil: `false`) |
+| `>=` | Lebih besar atau sama dengan | $18 >= 18$ (Hasil: `true`) |
+
+> **💡 Tips Pro:** Selalu gunakan `===` (tiga sama dengan). Ini jauh lebih aman karena dia mengecek apakah "barangnya" sama dan "jenisnya" juga sama. Ibarat mengecek kunci: tidak cuma bentuknya yang sama, tapi bahannya juga harus sama.
+
+---
+
+### 🛠️ Praktek: Cek Syarat Belanja
+
+Buka `script.js` kamu. Kita tes logika ini sebelum masuk ke Project Utama.
+
+```javascript
+const hargaBarang = 50000;
+let saldoSaya = 75000;
+
+// Apakah uang saya cukup?
+let cukupGak = saldoSaya >= hargaBarang; 
+
+console.log(`Harga barang: ${hargaBarang}`);
+console.log(`Saldo saya: ${saldoSaya}`);
+console.log(`Apakah saldo cukup? ${cukupGak}`); // Hasil: true
+
+// Cek apakah saldo pas-pasan (Sangat Sama)
+let uangPas = saldoSaya === hargaBarang;
+console.log(`Apakah uang saya pas-pasan? ${uangPas}`); // Hasil: false
+
+```
+
+---
+
+# 🏆 Project Fase 1: The Digital Wallet (Dompet Digital)
+
+Saatnya menyatukan Part 1 sampai Part 5! Kamu akan membuat simulasi sistem kasir sederhana.
+
+### 📝 Instruksi Tugas:
+
+1. Buat variabel **`const`** untuk nama pemilik dompet.
+2. Buat variabel **`let`** untuk `saldoAwal`.
+3. Buat variabel untuk `namaProduk` dan `hargaProduk`.
+4. Hitung `sisaSaldo` setelah membeli produk tersebut.
+5. Buat logika perbandingan untuk mengecek:
+* Apakah pembeli masih punya uang (sisa saldo > 0)?
+* Apakah pembeli jatuh miskin (sisa saldo === 0)?
+
+
+6. Cetak semua hasilnya menggunakan **Template Literals** (Backticks).
+
+---
+
+### 🛠️ Contoh Solusi (Coba kerjakan sendiri dulu ya!):
+
+```javascript
+// 1. Identitas (Part 1 & 2)
+const pemilik = "Andi";
+let saldo = 100000;
+
+// 2. Transaksi (Part 3)
+const belanjaan = "Sepatu Keren";
+const harga = 85000;
+
+// Proses Hitung (Part 3)
+saldo -= harga; // Saldo berkurang
+
+// 3. Cek Kondisi (Part 5)
+const masihAdaUang = saldo > 0;
+const uangHabis = saldo === 0;
+
+// 4. Laporan Hasil (Part 4)
+console.log(`
+===== NOTIFIKASI TRANSAKSI =====
+Halo, ${pemilik}!
+Kamu baru saja membeli ${belanjaan}.
+Harga: Rp${harga}
+Sisa saldo kamu sekarang: Rp${saldo}
+
+--- STATUS KEUANGAN ---
+Apakah masih ada sisa uang? ${masihAdaUang}
+Apakah saldo benar-benar habis? ${uangHabis}
+================================
+`);
+
+```
+
+---
+
+### 🔍 Evaluasi Fase 1
+
+Jika kamu bisa menjalankan kode di atas dan memahaminya, selamat! Kamu sudah menguasai:
+
+* Cara menyimpan data (**Variables**).
+* Memahami jenis data (**Data Types**).
+* Melakukan perhitungan (**Arithmetic**).
+* Menampilkan laporan yang rapi (**Template Literals**).
+* Membuat keputusan dasar (**Logic/Comparison**).
+
+**Fase 1 Selesai!** Kita sudah punya "otak" yang bisa menghitung. Di **Phase 2**, kita akan belajar cara membuat si "otak" ini mengambil keputusan otomatis (seperti: "Kalau saldo kurang, tampilkan peringatan merah").
+
+**Siap lanjut ke Part 6 (Phase 2: If-Else)?** 🚀
