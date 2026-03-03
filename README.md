@@ -241,3 +241,96 @@ Tanpa operator, variabelmu cuma jadi pajangan. Operatorlah yang membuat aplikasi
 4. Tampilkan hasil akhirnya di console dengan kalimat: *"Hasil investasi dan pengeluaran saya: [tabungan]"*.
 
 **Sudah mulai terasa kan bagaimana angka-angka itu bergerak? Kalau sudah paham alat hitungnya, kita lanjut ke Part 4: String Manipulation (Cara bermain-main dengan teks agar lebih keren)!** ⚡
+
+---
+
+Keren, progresmu cepat! Setelah kita punya **kotak** (Variabel) dan tahu **jenis barangnya** (Tipe Data), sekarang kita butuh **alat** untuk mengolah barang-barang tersebut.
+
+Di JavaScript, alat-alat ini disebut **Operator**.
+
+---
+
+# ➗ Part 3: Operator (Alat Pengolah Barang)
+
+### 🧩 Analogi: "Mesin di Pabrik Logistik"
+
+Kalau variabel adalah kotak, maka Operator adalah **mesin-mesin otomatis** yang ada di dalam gudang:
+
+* **Operator Aritmatika**: Ini adalah **mesin hitung**. Dia bisa menambah, mengurangi, atau membelah isi kotak yang bertipe *Number*.
+* **Operator Penugasan (Assignment)**: Ini adalah **mesin pengisi**. Dia bertugas memasukkan barang ke dalam kotak atau menambah isinya secara otomatis.
+* **Operator Penggabung**: Ini adalah **mesin lem**. Khusus untuk tipe *String*, operator `+` berubah fungsi menjadi lem yang menyambungkan dua teks.
+
+---
+
+### 📚 Teori: Alat-Alat Utama yang Sering Dipakai
+
+#### 1. Operator Aritmatika (Matematika Dasar)
+
+* `+` : Tambah
+* `-` : Kurang
+* `*` : Kali
+* `/` : Bagi
+* `%` : **Modulo** (Sisa Bagi).
+> **Analogi Modulo**: Kamu punya 10 kelereng, mau dibagikan ke 3 anak sama rata. Masing-masing dapat 3, nah **sisa 1** kelereng yang tidak bisa dibagi itulah hasil Modulo ($10 \% 3 = 1$).
+
+
+* `**` : Pangkat (Misal $2^{3}$ ditulis `2 ** 3`).
+
+#### 2. Operator Penugasan (Jalan Pintas)
+
+Selain `=` untuk mengisi, ada cara cepat untuk mengubah isi kotak:
+
+* `+=` : Isi lama ditambah nilai baru. (Contoh: `skor += 5` artinya skor nambah 5).
+* `-=` : Isi lama dikurangi nilai baru.
+
+---
+
+### 🛠️ Praktek: Simulasi Transaksi Sederhana
+
+Buka `script.js` kamu. Kita akan mulai mencicil logika untuk **Project Fase 1 (Digital Wallet)**.
+
+```javascript
+// 1. Persiapan awal
+let saldoAwal = 100000;
+let hargaKopi = 25000;
+let hargaDonat = 15000;
+
+// 2. Proses Belanja (Aritmatika)
+let totalBelanja = hargaKopi + hargaDonat;
+let sisaSaldo = saldoAwal - totalBelanja;
+
+console.log("Total belanjaan kamu: Rp" + totalBelanja);
+console.log("Sisa saldo setelah belanja: Rp" + sisaSaldo);
+
+// 3. Dapat Bonus Saldo (Penugasan / Assignment)
+// Misal dapat cashback Rp5.000
+sisaSaldo += 5000; // Ini sama saja dengan: sisaSaldo = sisaSaldo + 5000
+
+console.log("Selamat! Dapat cashback. Saldo sekarang: Rp" + sisaSaldo);
+
+// 4. Kasus Modulo (Sisa bagi)
+// Kamu punya 10 donat, mau dimasukin ke kotak yang muat 3 donat.
+let sisaDonat = 10 % 3;
+console.log("Donat yang tidak masuk kotak (sisa): " + sisaDonat);
+
+```
+
+---
+
+### 🔍 Kenapa Ini Penting?
+
+Tanpa operator, variabelmu cuma jadi pajangan. Operatorlah yang membuat aplikasi bisa **berhitung**. Bayangkan aplikasi belanja tanpa operator pengurangan; saldo pembeli tidak akan pernah berkurang meskipun sudah borong barang!
+
+---
+
+### 💡 Tantangan Part 3 (Logic Challenge)
+
+1. Buat variabel `let tabungan` dengan nilai `1000000` (1 juta).
+2. Gunakan operator penugasan (`*=`) untuk melipatgandakan tabunganmu menjadi 2 kali lipat karena "investasi".
+3. Kurangi tabungan tersebut sebesar `500000` menggunakan operator `-=`.
+4. Tampilkan hasil akhirnya di console dengan kalimat: *"Hasil investasi dan pengeluaran saya: [tabungan]"*.
+
+**Sudah mulai terasa kan bagaimana angka-angka itu bergerak? Kalau sudah paham alat hitungnya, kita lanjut ke Part 4: String Manipulation (Cara bermain-main dengan teks agar lebih keren)!** ⚡
+
+---
+
