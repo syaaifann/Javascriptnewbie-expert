@@ -1,3 +1,66 @@
+# 🗺️ JavaScript Masterclass Roadmap: The Path to Mastery
+
+Status Belajar: **🏗️ Phase 3 (Functions & Scope)**
+Progress: ![Progress](https://geps.dev/progress/45) (45%)
+
+---
+
+## ✅ PHASE 1: The Fundamentals
+> **Tujuan:** Memahami cara kerja "Gudang Data" (Memori).
+
+- [x] **Part 1:** Variabel (`let`, `const`) & Cara Sambung ke HTML.
+- [x] **Part 2:** Tipe Data (String, Number, Boolean, Null, Undefined).
+- [x] **Part 3:** Operator Aritmatika & Penugasan (Mesin Hitung).
+- [x] **Part 4:** String Manipulation (Template Literals / Backticks).
+- [x] **Part 5:** Logika Dasar (Comparison Operators `===`, `!==`).
+- [x] 🏆 **Project 1:** *The Digital Wallet* (Dompet Digital).
+
+---
+
+## ✅ PHASE 2: Control Flow
+> **Tujuan:** Membuat kode bisa "Berpikir" dan "Mengambil Keputusan".
+
+- [x] **Part 6:** Pengkondisian (`if`, `else if`, `else`).
+- [x] **Part 7:** Switch Case & Ternary Operator (Pilihan Cepat).
+- [x] **Part 8:** Perulangan Dasar (`for`, `while`).
+- [x] **Part 9:** Nested Loop (Loop di dalam Loop / Jam Dinding).
+- [x] **Part 10:** Break & Continue (Interupsi Tugas).
+- [x] 🏆 **Project 2:** *Smart Cashier & Inventory*.
+
+---
+
+## 🏗️ PHASE 3: Functions & Scope
+> **Tujuan:** Arsitektur Kode (Membuat Mesin yang Bisa Dipakai Ulang).
+
+- [x] **Part 11:** Function Declaration vs Expression (Tombol Resep).
+- [x] **Part 12:** Arrow Function (Sintaks Modern ES6 `=>`).
+- [x] **Part 13:** Global vs Local Scope (Taman Kota vs Kamar Pribadi).
+- [ ] **Part 14:** Hoisting (Misteri Pengangkatan Kode).
+- [ ] 🏆 **Project 3:** *Personal Assistant Bot* (Bot Pengolah Data).
+
+---
+
+## ⏳ MASA DEPAN (Yang Akan Datang)
+
+### 📦 Phase 4: Data Structure
+- [ ] **Part 15-16:** Array (Koleksi barang) & Array Methods (`map`, `filter`).
+- [ ] **Part 17-18:** Object (Data manusiawi) & Array of Objects.
+- [ ] 🏆 **Project 4:** *Simple E-Commerce Catalog*.
+
+### 🌐 Phase 5: The DOM (Menghidupkan Website)
+- [ ] **Part 19-20:** DOM Selection & Manipulation.
+- [ ] **Part 21:** Event Listener (Klik, Ketik, Scroll).
+- [ ] **Part 22:** Local Storage (Simpan data meski browser ditutup).
+- [ ] 🏆 **Project 5:** *Dynamic To-Do List*.
+
+### 🚀 Phase 6: Advanced & Final Boss
+- [ ] **Part 23:** Asynchronous (`setTimeout` & `Intervals`).
+- [ ] **Part 24:** Fetch API (Ambil data dari internet / API luar).
+- [ ] **Part 25:** 🏁 **MEGA PROJECT:** *The Weather App* atau *Movie Finder*.
+
+
+---
+
 ### 🧩 Analogy Mode: "Menyambungkan Saraf ke Tubuh"
 
 Bayangkan file **HTML** adalah tubuh robot yang keren. Tapi tanpa **JavaScript**, robot itu cuma patung pajangan.
